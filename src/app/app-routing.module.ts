@@ -8,7 +8,7 @@ import { AddBookComponent } from './components/add-book/add-book.component';
 const routes: Routes = [
  { path: '', pathMatch: 'full',  redirectTo: 'add-book' },
  { path: 'add-book', component: AddBookComponent },
- { path: 'edit-book', component: EditBookComponent },
+ { path: 'edit-book/:id', component: EditBookComponent },
  { path: 'books-list', component: BookListComponent }
 ];
 
